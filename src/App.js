@@ -57,7 +57,7 @@ function App() {
             {loading ? (
               "Loading..."
             ) : user.email ? (
-              <button className="btn" onClick={logout}>
+              <button className="btn__logout" onClick={logout}>
                 {user.email && user.email[0].toUpperCase()}
               </button>
             ) : (
@@ -65,7 +65,7 @@ function App() {
                 <button className="btn" onClick={register}>
                   Register
                 </button>
-                <button className="btn" onClick={login}>
+                <button className="btn__login" onClick={login}>
                   Login
                 </button>
               </>
